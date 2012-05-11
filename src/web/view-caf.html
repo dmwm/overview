@@ -1,0 +1,85 @@
+<script type="text/x-template" id="t-links-caf"
+></script
+><script type="text/x-template" id="t-view-caf-storage-pools"
+ ><div class='item' style='float:left;padding:.5em'
+   ><h3>EOSCMS Storage CPU/NET</h3
+   ><img style='margin:1em 0' src='@MOUNT@/image/eoscms/storage/cpu' /><br
+   /><img style='margin:-0.75em 0 1em' src='@MOUNT@/image/eoscms/storage/net' /><br
+ /></div
+ ><div class='item' style='float:left;padding:.5em'
+   ><h3>EOSCMS Disk I/O / Open Files</h3
+   ><img style='margin:1em 0' src='@MOUNT@/image/eoscms/default/disk-io' /><br
+   /><img style='margin:-0.75em 0 1em' src='@MOUNT@/image/eoscms/default/open-files' /><br
+ /></div
+ ><div class='item' style='float:left;padding:.5em'
+   ><h3>EOSCMS XROOT / SRM latency</h3
+   ><img style='margin:1em 0' src='@MOUNT@/image/eoscms/default/xroot-latency' /><br
+   /><img style='margin:-0.75em 0 1em' src='@MOUNT@/image/eoscms/default/srm-latency' /><br
+ /></div
+ ><div class='item' style='float:left;padding:.5em'
+   ><h3>EOSCMS Load average</h3
+   ><img class='icon' src='@MOUNT@/image/eoscms/storage/loadavg' /><br
+ /></div
+></script
+><script type="text/x-template" id="t-view-caf-batch-farm"
+ ><div class='item' style='float:left;padding:.5em'
+   ><h3>CMSCAF</h3
+   ><img style='margin:1em 0' src='@MOUNT@/image/lxbatch/cmscaf/cpu' /><br
+   /><img style='margin:-0.75em 0 1em' src='@MOUNT@/image/lxbatch/cmscaf/net' /><br
+ /></div
+ ><div class='item' style='float:left;padding:.5em'
+   ><h3>CMSEXPRESS</h3
+   ><img style='margin:1em 0' src='@MOUNT@/image/lxbatch/cmsexpress/cpu' /><br
+   /><img style='margin:-0.75em 0 1em' src='@MOUNT@/image/lxbatch/cmsexpress/net' /><br
+ /></div
+ ><div class='item' style='float:left;padding:.5em'
+   ><h3>CMSINTER</h3
+   ><img style='margin:1em 0' src='@MOUNT@/image/lxbatch/cmsinter/cpu' /><br
+   /><img style='margin:-0.75em 0 1em' src='@MOUNT@/image/lxbatch/cmsinter/net' /><br
+ /></div
+ ><div class='item' style='float:left;padding:.5em'
+   ><h3>Metrics distribution of CMSCAF machines' loads</h3
+   ><img class='icon' src='@MOUNT@/image/lxbatch/cmscaf/loadavg' /><br
+   /><h3>Metrics distribution of CMSEXPRESS machines' loads</h3
+   /><img class='icon' src='@MOUNT@/image/lxbatch/cmsexpress/loadavg' /><br
+   /><h3>Metrics distribution of CMSINTER machines' loads</h3
+   /><img class='icon' src='@MOUNT@/image/lxbatch/cmsinter/loadavg' /><br
+ /></div
+></script
+><script type="text/x-template" id="t-view-caf-job-summary"
+ ><div class='item' style='float:left;padding:.5em'
+   ><h3>CMSCAF1NH</h3
+   ><img style='margin:1em 0' src='@MOUNT@/image/job-queue/cmscaf1nh'
+   /><h3>CMSCAF1ND</h3
+   ><img style='margin:1em 0' src='@MOUNT@/image/job-queue/cmscaf1nd'
+ /></div
+ ><div class='item' style='float:left;padding:.5em'
+   ><h3>CMSCAF1NW</h3
+   ><img style='margin:1em 0' src='@MOUNT@/image/job-queue/cmscaf1nw'
+   /><h3>CMSEXPRESS</h3
+   ><img style='margin:1em 0' src='@MOUNT@/image/job-queue/cmsexpress'
+ /></div
+></script
+><script type="text/x-template" id="t-view-caf-disk-usage"
+ ><div class='item' style='float:left;padding:.5em'
+   ><h3>EOSCMS free space</h3
+   ><img style='margin:1em 0' src='@MOUNT@/image/eoscms/default/space-use'
+ /></div
+ ><div class='item' style='float:left;padding:.5em'
+   ><table width='100%'
+     ><tr><th>CAF groups</th><th align='center'>PhEDEx-registered datasets</th></tr
+     ><tr><td valign='top'>u_CMSALCA</td
+       ><td valign='top' class='fetch-content'
+          x-content='@MOUNT@/data/caf/alca'></td></tr
+     ><tr><td valign='top'>u_CMSCOMM</td
+       ><td valign='top' class='fetch-content'
+          x-content='@MOUNT@/data/caf/comm'></td></tr
+     ><tr><td valign='top'>u_CMSPHYS</td
+       ><td valign='top' class='fetch-content'
+          x-content='@MOUNT@/data/caf/phys'></td></tr
+     ><tr><td valign='top'>Other</td
+       ><td valign='top' class='fetch-content'
+          x-content='@MOUNT@/data/caf/other'></td></tr
+   ></table
+ /></div
+></script>

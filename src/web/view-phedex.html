@@ -1,0 +1,154 @@
+<script type="text/x-template" id="t-links-phedex"
+><p><a href='https://cmsweb.cern.ch/phedex' target='_blank'>PhEDEx</a></p
+></script
+><script type="text/x-template" id="t-panel-phedex-data"
+ ><table
+   ><tr x-id="period"><td>Period</td><td
+     ><input x-param="w" class="num" type="text" placeholder="96" style="margin-right:.3em"/>
+     <span x-param="s" class="button-group single-choice"
+       ><span x-value="h" class="button primary">Hours</span
+       ><span x-value="d" class="button">Days</span
+       ><span x-value="w" class="button">Weeks</span
+       ><span x-value="m" class="button">Months</span
+       ><span x-value="y" class="button">Years</span
+     ></span></td></tr
+   ><tr x-id="upto"><td>Up to</td><td
+     ><span x-param="u" class="button-group single-choice"
+       ><span x-value="n" class="button primary">Now</span
+       ><span x-value="d" class="button">Time</span
+     ></span>&nbsp;
+     <span x-id="upto-date">2012-05-02 23:59 UTC, week 201213</span
+     ></td></tr
+   ><tr x-id="filter"><td>Filter</td><td
+     ><input x-param="S" type="text" placeholder="Source" style="width:7em" /> to&nbsp;
+      <input x-param="D" type="text" placeholder="Destination" style="width:7em"
+     /></td></tr
+   ><tr x-id="links"><td>Links</td><td
+     ><span x-param="l" class="button-group single-choice"
+       ><span x-value="w" class="button primary">WAN</span
+       ><span x-value="m" class="button">Migration</span
+       ><span x-value="s" class="button">Staging</span
+       ><span x-value="a" class="button">All</span
+     ></span></td></tr
+   ><tr x-id="quantity"><td>Quantity</td><td
+     ><span x-param="q" class="button-group single-choice"
+       ><span x-value="d" class="button primary">Destination</span
+       ><span x-value="s" class="button">Source</span
+       ><span x-value="l" class="button">Link</span
+     ></span></td></tr
+   ><tr x-id="instances"><td>Instances</td><td
+     ><span x-param="i" class="button-group multi-choice"
+       ><span x-value="p" class="button primary">Production</span
+       ><span x-value="d" class="button">Debug</span
+       ><span x-value="t" class="button">Test</span
+       ><span x-value="2" class="button">Test 2</span
+     ></span></td></tr
+ ></table
+></script
+><script type="text/x-template" id="t-panel-phedex-display"
+ ><table
+   ><tr x-id="chart"><td>Chart</td><td
+     ><span x-param="c" class="button-group single-choice"
+       ><span x-value="h" class="button primary">Histogram</span
+       ><span x-value="l" class="button">Line</span
+       ><span x-value="a" class="button">Calendar</span
+       ><span x-value="t" class="button">Table</span
+       ><span x-value="b" class="button">Bar</span
+       ><span x-value="s" class="button">Scatter</span
+       ><span x-value="d" class="button">Density</span
+       ><span x-value="p" class="button">Partition</span
+       ><span x-value="o" class="button">Chord</span
+       ><span x-value="w" class="button">World</span
+     ></span></td></tr
+   ><tr x-id="style"><td>Style</td><td
+     ><span x-param="y" class="button-group single-choice"
+       ><span x-value="s" class="button primary">Stacked</span
+       ><span x-value="c" class="button">Cumulative</span
+       ><span x-value="p" class="button">Points Only</span
+     ></span></td></tr
+   ><tr x-id="merge"><td>Merge values below</td><td
+     ><input x-param="m" class="num" type="text" placeholder="2" /> % of total</td></tr
+   ><tr x-id="value"><td>Value axis</td><td
+     ><span x-param="a" class="button-group single-choice"
+       ><span x-value="l" class="button primary">Linear</span
+       ><span x-value="g" class="button">Logarithmic</span
+     ></span
+     ><input x-param="N" style="margin-left:1em" class="num" type="text" placeholder=""
+      /> &#8211; <input x-param="X" class="num" type="text" placeholder=""
+      />,<input x-param="B" style="margin-left:1em" class="num" type="text" placeholder=""
+      /> bins</td></tr
+   ><tr x-id="split-rows"><td>Split to rows by</td><td
+     ><span x-param="R" class="button-group single-choice"
+       ><span x-value="n" class="button">Node</span
+       ><span x-value="s" class="button">Site</span
+       ><span x-value="t" class="button">Tier</span
+       ><span x-value="c" class="button">Country</span
+       ><span x-value="r" class="button">Region</span
+       ><span x-value="i" class="button">Instance</span
+       ><span x-value="x" class="button primary">None</span
+     ></span></td></tr
+   ><tr x-id="split-cols"><td><span style="visibility:hidden">Split to </span>columns by</td><td
+     ><span x-param="C" class="button-group single-choice"
+       ><span x-value="n" class="button">Node</span
+       ><span x-value="s" class="button">Site</span
+       ><span x-value="t" class="button">Tier</span
+       ><span x-value="c" class="button">Country</span
+       ><span x-value="r" class="button">Region</span
+       ><span x-value="i" class="button">Instance</span
+       ><span x-value="x" class="button primary">None</span
+     ></span></td></tr
+   ><tr x-id="stack"><td>Stack in chart by</td><td
+     ><span x-param="t" class="button-group single-choice"
+       ><span x-value="n" class="button">Node</span
+       ><span x-value="s" class="button">Site</span
+       ><span x-value="t" class="button">Tier</span
+       ><span x-value="c" class="button">Country</span
+       ><span x-value="r" class="button">Region</span
+       ><span x-value="i" class="button">Instance</span
+       ><span x-value="x" class="button primary">None</span
+     ></span></td></tr
+   ><tr x-id="group"><td>Group value by</td><td
+     ><span x-param="g" class="button-group single-choice"
+       ><span x-value="n" class="button primary">Node</span
+       ><span x-value="s" class="button">Site</span
+       ><span x-value="t" class="button">Tier</span
+       ><span x-value="c" class="button">Country</span
+       ><span x-value="r" class="button">Region</span
+       ><span x-value="i" class="button">Instance</span
+     ></span></td></tr
+   ><tr><td><span style="visibility:hidden">Group </span>link by</td><td
+     ><span x-param="G" class="button-group single-choice"
+       ><span x-value="n" class="button">Node</span
+       ><span x-value="s" class="button">Site</span
+       ><span x-value="t" class="button">Tier</span
+       ><span x-value="c" class="button">Country</span
+       ><span x-value="r" class="button">Region</span
+       ><span x-value="i" class="button">Instance</span
+       ><span x-value="a" class="button primary">As Destination</span
+     ></span></td></tr
+   ><tr><td>Sort legend by</td><td
+     ><span x-param="L" class="button-group single-choice"
+       ><span x-value="l" class="button primary">Label</span
+       ><span x-value="v" class="button">Value</span
+       ><span x-value="c" class="button">Count</span
+     ></span></td></tr
+   ><tr><td>Animate</td><td
+     ><span x-param="T" class="button-group single-choice"
+       ><span x-value="y" class="button">On</span
+       ><span x-value="n" class="button primary">Off</span
+     ></span>
+     <input x-param="V" style="margin-left:1em" class="num" type="text" placeholder="100"
+       /> ms</td></tr
+ ></table
+></script
+><script type="text/x-template" id="t-intro-phedex"
+ ><p><a class="internal dispatch-only"
+        href="@MOUNT@/phedex/show/data">Data Selection</a</p
+ ><p><a class="internal dispatch-only"
+        href="@MOUNT@/phedex/show/display">Display Options</a></p
+ ><p><a class="internal page-relink" x-replace="P=p" href="">Print</a> &#8211;&nbsp;
+     <a class="internal page-relink" x-replace="P=c" href="">CSV</a> &#8211;&nbsp;
+     <a class="internal page-relink" x-replace="P=j" href="">JSON</a></p
+></script
+><script type="text/x-template" id="t-view-phedex-plot"
+></script>

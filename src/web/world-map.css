@@ -1,0 +1,49 @@
+/* See http://polymaps.org/ex/world.html,
+       https://github.com/simplegeo/polymaps/blob/master/examples/world/world.html,
+
+       http://polymaps.org/ex/blue-marble.html,
+       https://github.com/simplegeo/polymaps/blob/master/examples/nasa/blue-marble.html */
+
+#map {
+  background: #012;
+}
+
+.compass .back {
+  fill-opacity: .8;
+  fill: #eee;
+}
+
+.compass .fore {
+  stroke-width: 1.5px;
+  stroke: #666 /* #999 */;
+}
+
+.compass rect.back.fore {
+  shape-rendering: crispEdges;
+  stroke-width: 1px;
+  stroke: #eee;
+  fill: #999;
+  fill-opacity: .3;
+}
+
+.compass .direction {
+  fill: none;
+}
+
+.compass .chevron {
+  stroke-width: 5px;
+  stroke: #666 /* #999 */;
+  fill: none;
+}
+
+.compass .zoom .chevron {
+  stroke-width: 4px;
+}
+
+.compass .active .chevron, .compass .chevron.active {
+  stroke: #fff;
+}
+
+.compass.active .active .direction {
+  fill: #999;
+}

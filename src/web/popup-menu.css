@@ -1,0 +1,85 @@
+.yui3-panel {
+  position: fixed;
+  outline: none;
+}
+
+.yui3-skin-sam .yui3-panel .yui3-panel-content {
+  background: none repeat scroll 0 0 white;
+  border: 1px solid #a9a9a9;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  text-align: center;
+}
+
+.popup-panel {
+}
+
+.yui3-skin-sam div.popup-panel .yui3-widget-hd {
+  white-space: nowrap;
+  color: #000;
+  background: #fff;
+  font-weight: bold;
+  background: -webkit-gradient(linear,0 0, 0 100%,from(#eee),to(#fff));
+  background: -moz-linear-gradient(0% 100% 90deg,#eee,#fff);
+  background: -ms-linear-gradient(#eee,#fff);
+  background: -o-linear-gradient(#eee,#fff);
+}
+
+div.popup-panel .yui3-widget-bd {
+  padding: 1.5em 0 1.8em;
+  background: transparent;
+  text-align: center;
+}
+
+div.popup-panel .yui3-widget-ft {
+  border-radius: 0 0 3px 3px;
+  background-color: #f5f4f1;
+  border-top: solid 1px #eae6db;
+}
+
+.yui3-skin-sam .yui3-widget-mask {
+  background-color: #223460;
+  opacity: .9;
+}
+
+/*
+.popup-panel .yui3-widget-ft {
+  height: 10px;
+  padding: 0;
+}
+*/
+
+/*
+.popup-panel .yui3-resize-handle-br {
+  right: 0;
+  bottom: 0;
+  height: 8px;
+  width: 8px;
+  position: absolute;
+}
+*/
+
+/*
+.hide-scrollbars .yui3-resize .bd { overflow: hidden; }
+.show-scrollbars .yui3-resize .bd { overflow: auto; }
+.show-scrollbars .underlay {
+  overflow: visible;
+  background: #eee;
+  opacity: 0.9;
+}
+*/
+
+.popup-panel table, .popup-panel th, .popup-panel td {
+ white-space: nowrap;
+ border: none;
+ margin: 0;
+}
+
+.popup-panel tr {
+ vertical-align: text-bottom;
+}
+
+.popup-panel th, .popup-panel td {
+ padding: .5em 2em 0 0;
+ text-align: left;
+}

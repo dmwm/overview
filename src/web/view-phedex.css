@@ -1,0 +1,33 @@
+input.num {
+  text-align: right;
+  width: 2em;
+}
+
+.map #map-image {
+  opacity: 1;
+}
+
+h2.figure-title:first-child {
+  margin-top: 0;
+}
+
+h2.figure-title, h3.figure-subtitle {
+  text-align: center;
+}
+
+h2.figure-title + h3.figure-subtitle {
+ margin-top: -1em;
+}
+
+h3.figure-subtitle {
+ font-weight: normal;
+ margin: .25em 0;
+}
+
+h3 + .map {
+ margin-top: .5em;
+}
+
+.yui3-button-icon {
+  background-image: url("/overview/static/yui?widget-buttons/assets/skins/sam/sprite_icons.gif") !important;
+}

@@ -1,0 +1,7 @@
+doc/Overview*.rst
+doc/modules.rst
+doc/build
+build
+*-min.js
+*-min.css
+*-min.html

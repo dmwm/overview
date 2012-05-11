@@ -1,0 +1,130 @@
+/* From https://github.com/necolas/css3-github-buttons
+    cf. http://nicolasgallagher.com/lab/css3-github-buttons/
+
+   This is free and unencumbered software released into the public domain.
+
+   Anyone is free to copy, modify, publish, use, compile, sell, or
+   distribute this software, either in source code form or as a compiled
+   binary, for any purpose, commercial or non-commercial, and by any
+   means.
+
+   In jurisdictions that recognize copyright laws, the author or authors
+   of this software dedicate any and all copyright interest in the
+   software to the public domain. We make this dedication for the benefit
+   of the public at large and to the detriment of our heirs and
+   successors. We intend this dedication to be an overt act of
+   relinquishment in perpetuity of all present and future rights to this
+   software under copyright law.
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+   EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+   IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+   OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+   ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+   OTHER DEALINGS IN THE SOFTWARE.
+
+   For more information, please refer to <http://unlicense.org/> */
+
+.button {
+  font-size: .9em;
+  position: relative;
+  overflow: visible;
+  display: inline-block;
+  padding: .5em 1em;
+  border: 1px solid #d4d4d4;
+  margin: 0;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 1px 1px 0 #fff;
+  color: #333;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  background-color: #ececec;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
+  background-image: -moz-linear-gradient(#f4f4f4, #ececec);
+  background-image: -ms-linear-gradient(#f4f4f4, #ececec);
+  background-image: -o-linear-gradient(#f4f4f4, #ececec);
+  background-image: linear-gradient(#f4f4f4, #ececec);
+  background-clip: padding-box;
+  border-radius: 0.3em;
+  /* IE hacks */ zoom: 1; *display: inline;
+}
+
+.button.primary {
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #eee;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e4e4e4), to(#d4d4d4));
+  background-image: -moz-linear-gradient(#e4e4e4, #d4d4d4);
+  background-image: -ms-linear-gradient(#e4e4e4, #d4d4d4);
+  background-image: -o-linear-gradient(#e4e4e4, #d4d4d4);
+  background-image: linear-gradient(#e4e4e4, #d4d4d4);
+}
+
+.button:hover, .button:focus, .button:active, .button.active {
+  border-color: #3072b3;
+  border-bottom-color: #2a65a0;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+  color: #fff;
+  background-color: #3c8dde;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#599bdc), to(#3072b3));
+  background-image: -moz-linear-gradient(#599bdc, #3072b3);
+  background-image: -o-linear-gradient(#599bdc, #3072b3);
+  background-image: linear-gradient(#599bdc, #3072b3);
+}
+
+.button:active, .button.active {
+  border-color: #2a65a0;
+  border-bottom-color: #3884cd;
+  background-color: #3072b3;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3072b3), to(#599bdc));
+  background-image: -moz-linear-gradient(#3072b3, #599bdc);
+  background-image: -ms-linear-gradient(#3072b3, #599bdc);
+  background-image: -o-linear-gradient(#3072b3, #599bdc);
+  background-image: linear-gradient(#3072b3, #599bdc);
+}
+
+/* overrides extra padding on button elements in Firefox */
+.button::-moz-focus-inner { padding: 0; border: 0; }
+
+.button.pill {
+  border-radius: 50em;
+}
+
+.button.disable {
+  opacity: 0.5;
+}
+
+.button-group {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /* IE hacks */ zoom: 1; *display: inline;
+}
+
+.button + .button, .button + .button-group,
+.button-group + .button, .button-group + .button-group {
+  margin-left: 15px;
+}
+
+.button-group .button {
+  margin-left: -1px;
+}
+
+.button-group > .button:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+
+.button-group > .button:first-child {
+  margin-left: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.button-group > .button:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
